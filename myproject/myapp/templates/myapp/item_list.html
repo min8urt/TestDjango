@@ -1,0 +1,19 @@
+<!-- myapp/templates/myapp/item_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+</head>
+<body>
+    <h1>Item List</h1>
+    {% if items %}
+        <ul>
+            {% for item in items %}
+                <li>{{ item.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No items available.</p>
+    {% endif %}
+</body>
+</html>
